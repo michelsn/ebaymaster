@@ -1,0 +1,142 @@
+[2013-12-21 13:24:39] Error : No error message available, result code: DB_SEC_E_AUTH_FAILED(0x80040E4D).
+[2013-12-21 13:24:39] select count(*) from [Transaction] where IsDelivered=false
+[2013-12-21 13:24:39] Error : No error message available, result code: DB_SEC_E_AUTH_FAILED(0x80040E4D).
+[2013-12-21 13:24:39] select * from [Transaction] where TransactionId in (select top 15 sub.TransactionId from ( select top 15 TransactionId,SaleDate, OrderLineItemId from [Transaction] where IsDelivered=false order by SaleDate desc, OrderLineItemId) [sub] order by sub.SaleDate, sub.OrderLineItemId) order by SaleDate desc
+[2013-12-21 13:24:41] Error : No error message available, result code: DB_SEC_E_AUTH_FAILED(0x80040E4D).
+[2013-12-21 13:24:41] select count(*) from [ActiveListing]
+[2013-12-21 13:24:41] Error : No error message available, result code: DB_SEC_E_AUTH_FAILED(0x80040E4D).
+[2013-12-21 13:24:41] select * from [ActiveListing] where ListId in (select top 15 sub.ListId from ( select top 15 ListId,StartTime from [ActiveListing] order by StartTime desc) [sub] order by sub.StartTime) order by StartTime desc
+[2013-12-21 13:24:42] Error : No error message available, result code: DB_SEC_E_AUTH_FAILED(0x80040E4D).
+[2013-12-21 13:24:42] select count(*) from [Message]
+[2013-12-21 13:24:42] Error : No error message available, result code: DB_SEC_E_AUTH_FAILED(0x80040E4D).
+[2013-12-21 13:24:42] select * from [Message] where MessageId in (select top 15 sub.MessageId from ( select top 15 MessageId,ReceiveDate from [Message] order by ReceiveDate desc) [sub] order by sub.ReceiveDate) order by ReceiveDate desc
+[2013-12-21 13:25:00] Error : No error message available, result code: DB_SEC_E_AUTH_FAILED(0x80040E4D).
+[2013-12-21 13:25:00] select count(*) from [Transaction] where IsDelivered=false
+[2013-12-21 13:25:00] Error : No error message available, result code: DB_SEC_E_AUTH_FAILED(0x80040E4D).
+[2013-12-21 13:25:00] select * from [Transaction] where TransactionId in (select top 15 sub.TransactionId from ( select top 15 TransactionId,SaleDate, OrderLineItemId from [Transaction] where IsDelivered=false order by SaleDate desc, OrderLineItemId) [sub] order by sub.SaleDate, sub.OrderLineItemId) order by SaleDate desc
+[2013-12-21 13:25:00] Error : No error message available, result code: DB_SEC_E_AUTH_FAILED(0x80040E4D).
+[2013-12-21 13:25:00] select count(*) from [Transaction] where IsBuyerLeftFeedback=0 and IsPaid=true and IsReceived=false and ShippedDate<#2013-12-21#
+[2013-12-21 13:25:01] Error : No error message available, result code: DB_SEC_E_AUTH_FAILED(0x80040E4D).
+[2013-12-21 13:25:01] select * from [Transaction] where TransactionId in (select top 15 sub.TransactionId from ( select top 15 TransactionId,SaleDate from [Transaction] where (Transaction.IsBuyerLeftFeedback=false and Transaction.ShippedDate<#2013-12-21#) order by SaleDate desc) [sub] order by sub.SaleDate) order by SaleDate desc
+[2013-12-21 13:25:02] Error : No error message available, result code: DB_SEC_E_AUTH_FAILED(0x80040E4D).
+[2013-12-21 13:25:02] select count(*) from [Message]
+[2013-12-21 13:25:02] Error : No error message available, result code: DB_SEC_E_AUTH_FAILED(0x80040E4D).
+[2013-12-21 13:25:02] select * from [Message] where MessageId in (select top 15 sub.MessageId from ( select top 15 MessageId,ReceiveDate from [Message] order by ReceiveDate desc) [sub] order by sub.ReceiveDate) order by ReceiveDate desc
+[2013-12-21 13:25:27] Error : No error message available, result code: DB_SEC_E_AUTH_FAILED(0x80040E4D).
+[2013-12-21 13:25:27] select count(*) from [Transaction] where IsDelivered=false
+[2013-12-21 13:25:27] Error : No error message available, result code: DB_SEC_E_AUTH_FAILED(0x80040E4D).
+[2013-12-21 13:25:27] select * from [Transaction] where TransactionId in (select top 15 sub.TransactionId from ( select top 15 TransactionId,SaleDate, OrderLineItemId from [Transaction] where IsDelivered=false order by SaleDate desc, OrderLineItemId) [sub] order by sub.SaleDate, sub.OrderLineItemId) order by SaleDate desc
+[2013-12-21 13:32:11] Error : No error message available, result code: DB_SEC_E_AUTH_FAILED(0x80040E4D).
+[2013-12-21 13:32:11] select count(*) from [Transaction] where IsDelivered=false
+[2013-12-21 13:32:11] Error : No error message available, result code: DB_SEC_E_AUTH_FAILED(0x80040E4D).
+[2013-12-21 13:32:11] select * from [Transaction] where TransactionId in (select top 15 sub.TransactionId from ( select top 15 TransactionId,SaleDate, OrderLineItemId from [Transaction] where IsDelivered=false order by SaleDate desc, OrderLineItemId) [sub] order by sub.SaleDate, sub.OrderLineItemId) order by SaleDate desc
+[2013-12-21 13:32:40] Error : No error message available, result code: DB_SEC_E_AUTH_FAILED(0x80040E4D).
+[2013-12-21 13:32:40] select count(*) from [Transaction] where IsDelivered=false
+[2013-12-21 13:32:40] Error : No error message available, result code: DB_SEC_E_AUTH_FAILED(0x80040E4D).
+[2013-12-21 13:32:40] select * from [Transaction] where TransactionId in (select top 15 sub.TransactionId from ( select top 15 TransactionId,SaleDate, OrderLineItemId from [Transaction] where IsDelivered=false order by SaleDate desc, OrderLineItemId) [sub] order by sub.SaleDate, sub.OrderLineItemId) order by SaleDate desc
+[2013-12-21 13:34:14] Error : No error message available, result code: DB_SEC_E_AUTH_FAILED(0x80040E4D).
+[2013-12-21 13:34:14] select count(*) from [Transaction] where IsDelivered=false
+[2013-12-21 13:34:14] Error : No error message available, result code: DB_SEC_E_AUTH_FAILED(0x80040E4D).
+[2013-12-21 13:34:14] select * from [Transaction] where TransactionId in (select top 15 sub.TransactionId from ( select top 15 TransactionId,SaleDate, OrderLineItemId from [Transaction] where IsDelivered=false order by SaleDate desc, OrderLineItemId) [sub] order by sub.SaleDate, sub.OrderLineItemId) order by SaleDate desc
+[2013-12-21 13:34:28] Error : No error message available, result code: DB_SEC_E_AUTH_FAILED(0x80040E4D).
+[2013-12-21 13:34:28] select count(*) from [ActiveListing]
+[2013-12-21 13:34:29] Error : No error message available, result code: DB_SEC_E_AUTH_FAILED(0x80040E4D).
+[2013-12-21 13:34:29] select * from [ActiveListing] where ListId in (select top 15 sub.ListId from ( select top 15 ListId,StartTime from [ActiveListing] order by StartTime desc) [sub] order by sub.StartTime) order by StartTime desc
+[2013-12-21 13:34:29] Error : No error message available, result code: DB_SEC_E_AUTH_FAILED(0x80040E4D).
+[2013-12-21 13:34:29] select count(*) from [Message]
+[2013-12-21 13:34:29] Error : No error message available, result code: DB_SEC_E_AUTH_FAILED(0x80040E4D).
+[2013-12-21 13:34:29] select * from [Message] where MessageId in (select top 15 sub.MessageId from ( select top 15 MessageId,ReceiveDate from [Message] order by ReceiveDate desc) [sub] order by sub.ReceiveDate) order by ReceiveDate desc
+[2013-12-21 13:37:02] Error : No error message available, result code: DB_SEC_E_AUTH_FAILED(0x80040E4D).
+[2013-12-21 13:37:02] select count(*) from [Transaction] where IsDelivered=false
+[2013-12-21 13:37:02] Error : No error message available, result code: DB_SEC_E_AUTH_FAILED(0x80040E4D).
+[2013-12-21 13:37:02] select * from [Transaction] where TransactionId in (select top 15 sub.TransactionId from ( select top 15 TransactionId,SaleDate, OrderLineItemId from [Transaction] where IsDelivered=false order by SaleDate desc, OrderLineItemId) [sub] order by sub.SaleDate, sub.OrderLineItemId) order by SaleDate desc
+[2013-12-21 13:37:03] Error : No error message available, result code: DB_SEC_E_AUTH_FAILED(0x80040E4D).
+[2013-12-21 13:37:03] select count(*) from [ActiveListing]
+[2013-12-21 13:37:04] Error : No error message available, result code: DB_SEC_E_AUTH_FAILED(0x80040E4D).
+[2013-12-21 13:37:04] select * from [ActiveListing] where ListId in (select top 15 sub.ListId from ( select top 15 ListId,StartTime from [ActiveListing] order by StartTime desc) [sub] order by sub.StartTime) order by StartTime desc
+[2013-12-21 13:37:04] Error : No error message available, result code: DB_SEC_E_AUTH_FAILED(0x80040E4D).
+[2013-12-21 13:37:04] select count(*) from [Message]
+[2013-12-21 13:37:04] Error : No error message available, result code: DB_SEC_E_AUTH_FAILED(0x80040E4D).
+[2013-12-21 13:37:04] select * from [Message] where MessageId in (select top 15 sub.MessageId from ( select top 15 MessageId,ReceiveDate from [Message] order by ReceiveDate desc) [sub] order by sub.ReceiveDate) order by ReceiveDate desc
+[2013-12-21 13:37:15] Error : No error message available, result code: DB_SEC_E_AUTH_FAILED(0x80040E4D).
+[2013-12-21 13:37:15] select count(*) from [Transaction] where IsDelivered=false
+[2013-12-21 13:37:15] Error : No error message available, result code: DB_SEC_E_AUTH_FAILED(0x80040E4D).
+[2013-12-21 13:37:15] select * from [Transaction] where TransactionId in (select top 15 sub.TransactionId from ( select top 15 TransactionId,SaleDate, OrderLineItemId from [Transaction] where IsDelivered=false order by SaleDate desc, OrderLineItemId) [sub] order by sub.SaleDate, sub.OrderLineItemId) order by SaleDate desc
+[2013-12-21 13:37:20] Error : No error message available, result code: DB_SEC_E_AUTH_FAILED(0x80040E4D).
+[2013-12-21 13:37:20] select count(*) from [Transaction] where IsDelivered=false
+[2013-12-21 13:37:20] Error : No error message available, result code: DB_SEC_E_AUTH_FAILED(0x80040E4D).
+[2013-12-21 13:37:20] select * from [Transaction] where TransactionId in (select top 15 sub.TransactionId from ( select top 15 TransactionId,SaleDate, OrderLineItemId from [Transaction] where IsDelivered=false order by SaleDate desc, OrderLineItemId) [sub] order by sub.SaleDate, sub.OrderLineItemId) order by SaleDate desc
+[2013-12-21 13:37:29] Error : No error message available, result code: DB_SEC_E_AUTH_FAILED(0x80040E4D).
+[2013-12-21 13:37:29] select count(*) from [Message]
+[2013-12-21 13:37:29] Error : No error message available, result code: DB_SEC_E_AUTH_FAILED(0x80040E4D).
+[2013-12-21 13:37:29] select * from [Message] where MessageId in (select top 15 sub.MessageId from ( select top 15 MessageId,ReceiveDate from [Message] order by ReceiveDate desc) [sub] order by sub.ReceiveDate) order by ReceiveDate desc
+[2013-12-21 13:37:39] Error : No error message available, result code: DB_SEC_E_AUTH_FAILED(0x80040E4D).
+[2013-12-21 13:37:39] select count(*) from [Transaction] where IsDelivered=false
+[2013-12-21 13:37:39] Error : No error message available, result code: DB_SEC_E_AUTH_FAILED(0x80040E4D).
+[2013-12-21 13:37:39] select * from [Transaction] where TransactionId in (select top 15 sub.TransactionId from ( select top 15 TransactionId,SaleDate, OrderLineItemId from [Transaction] where IsDelivered=false order by SaleDate desc, OrderLineItemId) [sub] order by sub.SaleDate, sub.OrderLineItemId) order by SaleDate desc
+[2013-12-21 13:37:46] Error : No error message available, result code: DB_SEC_E_AUTH_FAILED(0x80040E4D).
+[2013-12-21 13:37:46] select count(*) from [Message]
+[2013-12-21 13:37:46] Error : No error message available, result code: DB_SEC_E_AUTH_FAILED(0x80040E4D).
+[2013-12-21 13:37:46] select * from [Message] where MessageId in (select top 15 sub.MessageId from ( select top 15 MessageId,ReceiveDate from [Message] order by ReceiveDate desc) [sub] order by sub.ReceiveDate) order by ReceiveDate desc
+[2013-12-21 13:38:45] Error : No error message available, result code: DB_SEC_E_AUTH_FAILED(0x80040E4D).
+[2013-12-21 13:38:45] select count(*) from [Transaction] where IsDelivered=false
+[2013-12-21 13:38:46] Error : No error message available, result code: DB_SEC_E_AUTH_FAILED(0x80040E4D).
+[2013-12-21 13:38:46] select * from [Transaction] where TransactionId in (select top 15 sub.TransactionId from ( select top 15 TransactionId,SaleDate, OrderLineItemId from [Transaction] where IsDelivered=false order by SaleDate desc, OrderLineItemId) [sub] order by sub.SaleDate, sub.OrderLineItemId) order by SaleDate desc
+[2013-12-21 13:39:06] Error : No error message available, result code: DB_SEC_E_AUTH_FAILED(0x80040E4D).
+[2013-12-21 13:39:06] select count(*) from [Message]
+[2013-12-21 13:39:07] Error : No error message available, result code: DB_SEC_E_AUTH_FAILED(0x80040E4D).
+[2013-12-21 13:39:07] select * from [Message] where MessageId in (select top 15 sub.MessageId from ( select top 15 MessageId,ReceiveDate from [Message] order by ReceiveDate desc) [sub] order by sub.ReceiveDate) order by ReceiveDate desc
+[2013-12-21 13:39:46] Error : No error message available, result code: DB_SEC_E_AUTH_FAILED(0x80040E4D).
+[2013-12-21 13:39:46] select count(*) from [Transaction] where IsDelivered=false
+[2013-12-21 13:39:46] Error : No error message available, result code: DB_SEC_E_AUTH_FAILED(0x80040E4D).
+[2013-12-21 13:39:46] select * from [Transaction] where TransactionId in (select top 15 sub.TransactionId from ( select top 15 TransactionId,SaleDate, OrderLineItemId from [Transaction] where IsDelivered=false order by SaleDate desc, OrderLineItemId) [sub] order by sub.SaleDate, sub.OrderLineItemId) order by SaleDate desc
+[2013-12-21 13:39:49] Error : No error message available, result code: DB_SEC_E_AUTH_FAILED(0x80040E4D).
+[2013-12-21 13:39:49] select count(*) from [Message]
+[2013-12-21 13:39:50] Error : No error message available, result code: DB_SEC_E_AUTH_FAILED(0x80040E4D).
+[2013-12-21 13:39:50] select * from [Message] where MessageId in (select top 15 sub.MessageId from ( select top 15 MessageId,ReceiveDate from [Message] order by ReceiveDate desc) [sub] order by sub.ReceiveDate) order by ReceiveDate desc
+[2013-12-21 13:39:56] Error : No error message available, result code: DB_SEC_E_AUTH_FAILED(0x80040E4D).
+[2013-12-21 13:39:56] select count(*) from [Transaction] where IsBuyerLeftFeedback=0 and IsPaid=true and IsReceived=false and ShippedDate<#2013-12-21#
+[2013-12-21 13:39:57] Error : No error message available, result code: DB_SEC_E_AUTH_FAILED(0x80040E4D).
+[2013-12-21 13:39:57] select * from [Transaction] where TransactionId in (select top 15 sub.TransactionId from ( select top 15 TransactionId,SaleDate from [Transaction] where (Transaction.IsBuyerLeftFeedback=false and Transaction.ShippedDate<#2013-12-21#) order by SaleDate desc) [sub] order by sub.SaleDate) order by SaleDate desc
+[2013-12-21 13:39:58] Error : No error message available, result code: DB_SEC_E_AUTH_FAILED(0x80040E4D).
+[2013-12-21 13:39:58] select count(*) from [ActiveListing]
+[2013-12-21 13:39:58] Error : No error message available, result code: DB_SEC_E_AUTH_FAILED(0x80040E4D).
+[2013-12-21 13:39:58] select * from [ActiveListing] where ListId in (select top 15 sub.ListId from ( select top 15 ListId,StartTime from [ActiveListing] order by StartTime desc) [sub] order by sub.StartTime) order by StartTime desc
+[2013-12-21 13:39:59] Error : No error message available, result code: DB_SEC_E_AUTH_FAILED(0x80040E4D).
+[2013-12-21 13:39:59] select count(*) from [Transaction] where IsDelivered=false
+[2013-12-21 13:39:59] Error : No error message available, result code: DB_SEC_E_AUTH_FAILED(0x80040E4D).
+[2013-12-21 13:39:59] select * from [Transaction] where TransactionId in (select top 15 sub.TransactionId from ( select top 15 TransactionId,SaleDate, OrderLineItemId from [Transaction] where IsDelivered=false order by SaleDate desc, OrderLineItemId) [sub] order by sub.SaleDate, sub.OrderLineItemId) order by SaleDate desc
+[2013-12-21 13:40:00] Error : No error message available, result code: DB_SEC_E_AUTH_FAILED(0x80040E4D).
+[2013-12-21 13:40:00] select count(*) from [ActiveListing]
+[2013-12-21 13:40:01] Error : No error message available, result code: DB_SEC_E_AUTH_FAILED(0x80040E4D).
+[2013-12-21 13:40:01] select * from [ActiveListing] where ListId in (select top 15 sub.ListId from ( select top 15 ListId,StartTime from [ActiveListing] order by StartTime desc) [sub] order by sub.StartTime) order by StartTime desc
+[2013-12-21 13:40:01] Error : No error message available, result code: DB_SEC_E_AUTH_FAILED(0x80040E4D).
+[2013-12-21 13:40:01] select count(*) from [Transaction] where IsDelivered=false
+[2013-12-21 13:40:01] Error : No error message available, result code: DB_SEC_E_AUTH_FAILED(0x80040E4D).
+[2013-12-21 13:40:01] select * from [Transaction] where TransactionId in (select top 15 sub.TransactionId from ( select top 15 TransactionId,SaleDate, OrderLineItemId from [Transaction] where IsDelivered=false order by SaleDate desc, OrderLineItemId) [sub] order by sub.SaleDate, sub.OrderLineItemId) order by SaleDate desc
+[2013-12-21 13:40:06] Error : No error message available, result code: DB_SEC_E_AUTH_FAILED(0x80040E4D).
+[2013-12-21 13:40:06] select count(*) from [ActiveListing]
+[2013-12-21 13:40:07] Error : No error message available, result code: DB_SEC_E_AUTH_FAILED(0x80040E4D).
+[2013-12-21 13:40:07] select * from [ActiveListing] where ListId in (select top 15 sub.ListId from ( select top 15 ListId,StartTime from [ActiveListing] order by StartTime desc) [sub] order by sub.StartTime) order by StartTime desc
+[2013-12-21 13:40:07] Error : No error message available, result code: DB_SEC_E_AUTH_FAILED(0x80040E4D).
+[2013-12-21 13:40:07] select count(*) from [Transaction] where IsDelivered=false
+[2013-12-21 13:40:08] Error : No error message available, result code: DB_SEC_E_AUTH_FAILED(0x80040E4D).
+[2013-12-21 13:40:08] select * from [Transaction] where TransactionId in (select top 15 sub.TransactionId from ( select top 15 TransactionId,SaleDate, OrderLineItemId from [Transaction] where IsDelivered=false order by SaleDate desc, OrderLineItemId) [sub] order by sub.SaleDate, sub.OrderLineItemId) order by SaleDate desc
+[2013-12-21 13:40:09] Error : No error message available, result code: DB_SEC_E_AUTH_FAILED(0x80040E4D).
+[2013-12-21 13:40:09] select count(*) from [Transaction] where IsBuyerLeftFeedback=0 and IsPaid=true and IsReceived=false and ShippedDate<#2013-12-21#
+[2013-12-21 13:40:09] Error : No error message available, result code: DB_SEC_E_AUTH_FAILED(0x80040E4D).
+[2013-12-21 13:40:09] select * from [Transaction] where TransactionId in (select top 15 sub.TransactionId from ( select top 15 TransactionId,SaleDate from [Transaction] where (Transaction.IsBuyerLeftFeedback=false and Transaction.ShippedDate<#2013-12-21#) order by SaleDate desc) [sub] order by sub.SaleDate) order by SaleDate desc
+[2013-12-21 13:40:11] Error : No error message available, result code: DB_SEC_E_AUTH_FAILED(0x80040E4D).
+[2013-12-21 13:40:11] select count(*) from [ActiveListing]
+[2013-12-21 13:40:11] Error : No error message available, result code: DB_SEC_E_AUTH_FAILED(0x80040E4D).
+[2013-12-21 13:40:11] select * from [ActiveListing] where ListId in (select top 15 sub.ListId from ( select top 15 ListId,StartTime from [ActiveListing] order by StartTime desc) [sub] order by sub.StartTime) order by StartTime desc
+[2013-12-21 13:40:11] Error : No error message available, result code: DB_SEC_E_AUTH_FAILED(0x80040E4D).
+[2013-12-21 13:40:11] select count(*) from [Transaction] where IsDelivered=false
+[2013-12-21 13:40:12] Error : No error message available, result code: DB_SEC_E_AUTH_FAILED(0x80040E4D).
+[2013-12-21 13:40:12] select * from [Transaction] where TransactionId in (select top 15 sub.TransactionId from ( select top 15 TransactionId,SaleDate, OrderLineItemId from [Transaction] where IsDelivered=false order by SaleDate desc, OrderLineItemId) [sub] order by sub.SaleDate, sub.OrderLineItemId) order by SaleDate desc
+[2013-12-21 13:40:20] Error : No error message available, result code: DB_SEC_E_AUTH_FAILED(0x80040E4D).
+[2013-12-21 13:40:20] select * from [Category]
+[2013-12-21 13:40:34] Error : No error message available, result code: DB_SEC_E_AUTH_FAILED(0x80040E4D).
+[2013-12-21 13:40:34] select count(*) from [Transaction] where IsDelivered=false
+[2013-12-21 13:40:35] Error : No error message available, result code: DB_SEC_E_AUTH_FAILED(0x80040E4D).
+[2013-12-21 13:40:35] select * from [Transaction] where TransactionId in (select top 15 sub.TransactionId from ( select top 15 TransactionId,SaleDate, OrderLineItemId from [Transaction] where IsDelivered=false order by SaleDate desc, OrderLineItemId) [sub] order by sub.SaleDate, sub.OrderLineItemId) order by SaleDate desc

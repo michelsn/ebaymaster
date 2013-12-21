@@ -1,0 +1,400 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{6A67C8EE-F379-4C83-B4CC-966AA436D609}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>EbayMaster</RootNamespace>
+    <AssemblyName>EbayMaster</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>
+    </TargetFrameworkProfile>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="eBay.Service">
+      <HintPath>.\eBay.Service.dll</HintPath>
+    </Reference>
+    <Reference Include="eBay.Service.SDK.Attribute">
+      <HintPath>.\eBay.Service.SDK.Attribute.dll</HintPath>
+    </Reference>
+    <Reference Include="Interop.MSXML2">
+      <HintPath>.\Interop.MSXML2.dll</HintPath>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="Microsoft.Office.Interop.Excel, Version=12.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c">
+      <SpecificVersion>False</SpecificVersion>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+      <HintPath>C:\Windows\assembly\GAC\Microsoft.Office.Interop.Excel\12.0.0.0__71e9bce111e9429c\Microsoft.Office.Interop.Excel.dll</HintPath>
+    </Reference>
+    <Reference Include="Samples.Helper">
+      <HintPath>.\Samples.Helper.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="BizOperation\EbayAccountBiz.cs" />
+    <Compile Include="BizOperation\ItemCategoryBiz.cs" />
+    <Compile Include="BizOperation\EbayItemBiz.cs" />
+    <Compile Include="BizOperation\EbayMessageBiz.cs" />
+    <Compile Include="BizOperation\EbaySellingBiz.cs" />
+    <Compile Include="BizOperation\EbayTransactionBiz.cs" />
+    <Compile Include="DataAccess\DeliveryNoteDAL.cs" />
+    <Compile Include="DataAccess\ItemCategoryDAL.cs" />
+    <Compile Include="DataAccess\DataFactory.cs" />
+    <Compile Include="DataAccess\DbAccess.cs" />
+    <Compile Include="DataAccess\EbayListingDAL.cs" />
+    <Compile Include="DataAccess\EbayMessageDAL.cs" />
+    <Compile Include="DataAccess\EbaySellerInfoDAL.cs" />
+    <Compile Include="DataAccess\EbayTransactionDAL.cs" />
+    <Compile Include="DataAccess\ItemDAL.cs" />
+    <Compile Include="DataAccess\ItemStockInNoteDAL.cs" />
+    <Compile Include="DataAccess\ItemSupplierDAL.cs" />
+    <Compile Include="DataAccess\MessageTemplateCategoryDAL.cs" />
+    <Compile Include="DataAccess\MessageTemplateDAL.cs" />
+    <Compile Include="DataAccess\SourcingNoteDAL.cs" />
+    <Compile Include="DataAccess\SqlDataAccess.cs" />
+    <Compile Include="DataAccess\SupplierDAL.cs" />
+    <Compile Include="DataType\DeliveryNoteType.cs" />
+    <Compile Include="DataType\ItemCategoryType.cs" />
+    <Compile Include="DataType\EbayActiveListingType.cs" />
+    <Compile Include="DataType\EbayMessageType.cs" />
+    <Compile Include="DataType\EbaySellerInfoType.cs" />
+    <Compile Include="DataType\EbayTransactionType.cs" />
+    <Compile Include="DataType\InventoryItemType.cs" />
+    <Compile Include="DataType\ItemStockInNoteType.cs" />
+    <Compile Include="DataType\ItemSupplierType.cs" />
+    <Compile Include="DataType\MessageTemplateCategoryType.cs" />
+    <Compile Include="DataType\MessageTemplateType.cs" />
+    <Compile Include="DataType\SourcingNoteType.cs" />
+    <Compile Include="DataType\SupplierType.cs" />
+    <Compile Include="Forms\CustomGrid.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Forms\FrmAboutBox.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FrmAboutBox.Designer.cs">
+      <DependentUpon>FrmAboutBox.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\FrmAccountGetToken.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FrmAccountGetToken.Designer.cs">
+      <DependentUpon>FrmAccountGetToken.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\FrmEditSourcingNote.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FrmEditSourcingNote.Designer.cs">
+      <DependentUpon>FrmEditSourcingNote.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\FrmItemStat.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FrmItemStat.Designer.cs">
+      <DependentUpon>FrmItemStat.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\FrmMainPartial_Export.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FrmMainPartial_ActiveListing.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FrmAccount.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FrmAccount.Designer.cs">
+      <DependentUpon>FrmAccount.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\FrmDBConnection.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FrmDBConnection.Designer.cs">
+      <DependentUpon>FrmDBConnection.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\FrmEditDeliveryNote.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FrmEditDeliveryNote.Designer.cs">
+      <DependentUpon>FrmEditDeliveryNote.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\FrmDeliveryNoteList.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FrmDeliveryNoteList.Designer.cs">
+      <DependentUpon>FrmDeliveryNoteList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\FrmItem.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FrmItem.Designer.cs">
+      <DependentUpon>FrmItem.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\FrmItemCategory.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FrmItemCategory.Designer.cs">
+      <DependentUpon>FrmItemCategory.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\FrmEditItemStockInNote.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FrmEditItemStockInNote.Designer.cs">
+      <DependentUpon>FrmEditItemStockInNote.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\FrmItemStockInNoteList.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FrmItemStockInNoteList.Designer.cs">
+      <DependentUpon>FrmItemStockInNoteList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\FrmMain.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FrmMain.Designer.cs">
+      <DependentUpon>FrmMain.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\FrmMainPartial_MainMenu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FrmMainPartial_Message.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FrmMainPartial_Order.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FrmMainPartial_PostSale.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FrmMessageTemplate.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FrmMessageTemplate.Designer.cs">
+      <DependentUpon>FrmMessageTemplate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\FrmProgress.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FrmProgress.designer.cs">
+      <DependentUpon>FrmProgress.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\FrmReplyBuyerMessage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FrmReplyBuyerMessage.Designer.cs">
+      <DependentUpon>FrmReplyBuyerMessage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\FrmSelectItemSKU.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FrmSelectItemSKU.Designer.cs">
+      <DependentUpon>FrmSelectItemSKU.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\FrmSelectShippingService.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FrmSelectShippingService.Designer.cs">
+      <DependentUpon>FrmSelectShippingService.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\FrmSendMessage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FrmSendMessage.Designer.cs">
+      <DependentUpon>FrmSendMessage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\FrmEditSupplier.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FrmEditSupplier.Designer.cs">
+      <DependentUpon>FrmEditSupplier.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\FrmSourcingNoteList.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FrmSourcingNoteList.Designer.cs">
+      <DependentUpon>FrmSourcingNoteList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\FrmSupplierList.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FrmSupplierList.Designer.cs">
+      <DependentUpon>FrmSupplierList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\FrmUploadTrackingNumber.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FrmUploadTrackingNumber.Designer.cs">
+      <DependentUpon>FrmUploadTrackingNumber.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\FrmUserMessage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FrmUserMessage.designer.cs">
+      <DependentUpon>FrmUserMessage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Splash.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Controls\PagedDataGridView.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\PagedDataGridView.Designer.cs">
+      <DependentUpon>PagedDataGridView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Utils\AccountUtil.cs" />
+    <Compile Include="Utils\AppSettingHelper.cs" />
+    <Compile Include="Utils\DateTimeConvertor.cs" />
+    <Compile Include="Utils\DBConnectionUtil.cs" />
+    <Compile Include="Utils\DgvUtil.cs" />
+    <Compile Include="Utils\EbayConstants.cs" />
+    <Compile Include="Utils\Export4pxExcelHelper.cs" />
+    <Compile Include="Utils\ExportHelper.cs" />
+    <Compile Include="Utils\Logger.cs" />
+    <Compile Include="Utils\StringUtil.cs" />
+    <EmbeddedResource Include="Controls\PagedDataGridView.resx">
+      <DependentUpon>PagedDataGridView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FrmAboutBox.resx">
+      <DependentUpon>FrmAboutBox.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FrmAccount.resx">
+      <DependentUpon>FrmAccount.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FrmAccountGetToken.resx">
+      <DependentUpon>FrmAccountGetToken.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FrmDBConnection.resx">
+      <DependentUpon>FrmDBConnection.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FrmEditDeliveryNote.resx">
+      <DependentUpon>FrmEditDeliveryNote.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FrmDeliveryNoteList.resx">
+      <DependentUpon>FrmDeliveryNoteList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FrmEditSourcingNote.resx">
+      <DependentUpon>FrmEditSourcingNote.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FrmItem.resx">
+      <DependentUpon>FrmItem.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FrmItemCategory.resx">
+      <DependentUpon>FrmItemCategory.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FrmEditItemStockInNote.resx">
+      <DependentUpon>FrmEditItemStockInNote.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FrmItemStat.resx">
+      <DependentUpon>FrmItemStat.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FrmItemStockInNoteList.resx">
+      <DependentUpon>FrmItemStockInNoteList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FrmMain.resx">
+      <DependentUpon>FrmMain.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FrmMessageTemplate.resx">
+      <DependentUpon>FrmMessageTemplate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FrmProgress.resx">
+      <DependentUpon>FrmProgress.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FrmReplyBuyerMessage.resx">
+      <DependentUpon>FrmReplyBuyerMessage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FrmSelectItemSKU.resx">
+      <DependentUpon>FrmSelectItemSKU.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FrmSelectShippingService.resx">
+      <DependentUpon>FrmSelectShippingService.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FrmSendMessage.resx">
+      <DependentUpon>FrmSendMessage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FrmEditSupplier.resx">
+      <DependentUpon>FrmEditSupplier.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FrmSourcingNoteList.resx">
+      <DependentUpon>FrmSourcingNoteList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FrmSupplierList.resx">
+      <DependentUpon>FrmSupplierList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FrmUploadTrackingNumber.resx">
+      <DependentUpon>FrmUploadTrackingNumber.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FrmUserMessage.resx">
+      <DependentUpon>FrmUserMessage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Spalsh.resx" />
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="app.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="SystemSettings.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

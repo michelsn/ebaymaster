@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Settings>
+  <DBConnection>
+    <option DBType="ACCESS" selected="1" value="Provider=Microsoft.ACE.OLEDB.12.0;Data Source=" />
+    <option DBType="SQLSERVER" selected="0" value="Data Source=zhiwang,49172;Network Library=DBMSSOCN;Initial Catalog=ebaybachelor;User ID=sa;Password=;" />
+  </DBConnection>
+  <Accounts>
+  </Accounts>
+</Settings>
